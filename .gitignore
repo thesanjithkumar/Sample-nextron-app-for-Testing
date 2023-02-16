@@ -1,0 +1,9 @@
+node_modules
+*.log
+.next
+app
+out
+dist
+/test-results/
+/playwright-report/
+/playwright/.cache/
