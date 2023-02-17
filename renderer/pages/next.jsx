@@ -1,23 +1,21 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Navbar from "../components/common/navbar/Navbar";
+import Todo from "../components/Todo/Todo";
 
 function Next() {
   return (
     <React.Fragment>
       <Head>
-        <title>Next - Nextron (with-javascript)</title>
+        <title>Todo Page</title>
       </Head>
+      <Navbar />
       <div>
-        <p>
-          ⚡ Electron + Next.js ⚡ -
-          <Link href="/home">
-            <a>Go to home page</a>
-          </Link>
-        </p>
+        <Todo />
       </div>
     </React.Fragment>
   );
-};
+}
 
 export default Next;

@@ -2,21 +2,15 @@ import React from "react";
 import Head from "next/head";
 // import Link from "next/link";
 import s from "../styles/base.module.css";
+import Navbar from "../components/common/navbar/Navbar";
 function Home() {
   return (
     <React.Fragment>
       <Head>
-        <title>Home - Nextron (with-javascript)</title>
+        <title>Home Page</title>
       </Head>
       <div>
-        <Head>
-          <title>Sample Nextron App</title>
-          <meta
-            name="description"
-            content="Awesome todoapp to store your awesome todos"
-          />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <Navbar />
         <div className="grid">
           <h1>Home Page</h1>
           <form>
@@ -60,7 +54,7 @@ function Home() {
                 style={{ width: "100%", maxHeight: "100px" }}
               ></textarea>
               <button type="submit" className={`${s.submit}`}>
-                Submit
+                <a href="/next">Submit</a>
               </button>
             </div>
           </form>
